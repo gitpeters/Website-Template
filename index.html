@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/swiper-bundle.min.css">
+
     <!-- =========== BOOTSTRAP =============== -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
@@ -2604,5 +2604,45 @@
         <!-- ================== INTERNAL SCRIPT ============== -->
     
 <script src="./js/app.js"></script>
-<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/scrollreveal.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script>
+    // scroll reveal
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 300,
+  reset: true,
+});
+
+sr.reveal(".container-fluid");
+sr.reveal(".home__title", { delay: 500 });
+sr.reveal(".home__value-number", { delay: 600, origin: "bottom" });
+sr.reveal(".home__description", { delay: 700, origin: "left" });
+sr.reveal(".home__img", { delay: 800, origin: "bottom" });
+sr.reveal(".section_padding", { delay: 800, origin: "top" });
+sr.reveal(".about__us-intro",{
+  delay: 820,
+  origin: "top"
+});
+sr.reveal(".how-app-work-slider-content",{
+  delay: 840,
+});
+sr.reveal(".circled-img",{
+  delay: 840,
+  origin: "left"
+});
+sr.reveal(".how-app-work-content",{
+  origin: "right"
+});
+sr.reveal(".blog-list",{
+  delay: 200
+});
+sr.reveal(".has-right-sidebar",{
+  delay: 200,
+  origin: "left"
+});
+</script>
 </html>
